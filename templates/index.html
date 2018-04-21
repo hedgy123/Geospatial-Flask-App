@@ -1,0 +1,8 @@
+
+<h1>Schools</h1>
+<p>There are {{ count }} schools in NYC </p>
+<ul>
+  {% for school in schools %}
+    <p> <a href="/school/{{ school.dbn }}"> {{ school.school_name }} </a> </p>
+  {% endfor %}
+</ul>
